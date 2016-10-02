@@ -16,7 +16,5 @@
     "url": "https://github.com/n4nagappan/free-wifi/issues"
   },
   "homepage": "https://github.com/n4nagappan/free-wifi#readme",
-  "dependencies": {
-    "@google/maps": "^0.2.1"
-  }
+  "dependencies": {}
 }
