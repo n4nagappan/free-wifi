@@ -1,0 +1,22 @@
+{
+  "name": "free-wifi",
+  "version": "1.0.0",
+  "description": "Map of coffee shops with free wifi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n4nagappan/free-wifi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n4nagappan/free-wifi/issues"
+  },
+  "homepage": "https://github.com/n4nagappan/free-wifi#readme",
+  "dependencies": {
+    "@google/maps": "^0.2.1"
+  }
+}
