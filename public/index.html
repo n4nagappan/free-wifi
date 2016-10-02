@@ -20,21 +20,43 @@
   <body>
     <div id="map" class="row"></div>
     <div id="list" class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
         <br />
         <table id="placeTable" class="table table-striped">
           <tbody>
-            
+
           </tbody>
         </table>
       </div>
-      <div class="col-md-4"></div>
+      <div class="col-md-2"></div>
     </div>
     <script src="./main.js"></script>
     <script   src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSZBDlj_cz530iQs8ENAjtpm4DjNQTSAw&callback=initMap&libraries=places"
     async defer></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script id="table-template" type="text/x-handlebars-template">
+      <tr>
+        <td>
+          {{name}}
+        </td>
+        <td>
+          <label class="radio-inline">
+            <input type="radio" name="qualityRadioOptions[{{i}}]" id="inlineRadio1" value="option1"> God Mode
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="qualityRadioOptions[{{i}}]" id="inlineRadio2" value="option2"> So so
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="qualityRadioOptions[{{i}}]" id="inlineRadio3" value="option3"> Barely works
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="qualityRadioOptions[{{i}}]" id="inlineRadio4" value="option4"> Stone age
+          </label>
+        </td>
+      </tr>
+    </script>
   </body>
 </html>
